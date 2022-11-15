@@ -4,7 +4,7 @@ import subprocess
 
 def main():
     # job関数をスケジュールに登録
-    schedule.every(600).seconds.do(job) # ②
+    schedule.every(10).seconds.do(job) # ②
 
     while True:
         # job関数を実行
@@ -14,6 +14,7 @@ def main():
 
 
 def job(): # ①
+    subprocess.run(['aws','s3','cp','s3://wixbacket/data.txt'])
     subprocess.run(['rm','-r','word.png'])
     subprocess.run(['git','add','.'])
     subprocess.run(['git','commit','-m','"auto up"'])

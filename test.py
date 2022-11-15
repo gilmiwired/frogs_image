@@ -17,7 +17,7 @@ stop_word_list =['そう', 'ない', 'いる', 'する', 'まま', 'よう',
 
 
 # テキストファイル読み込み
-with open('sup.txt', mode='rt', encoding='utf-8') as fi:
+with open('data.txt', mode='rt', encoding='utf-8') as fi:
     source_text = fi.read()
 
 # MeCabの準備
