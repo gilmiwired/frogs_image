@@ -31,7 +31,7 @@ while node:
     word_type = node.feature.split(',')[0]
     if word_type == '名詞' or word_type =='形容詞':
         word_list.append(node.surface)
-        print(word_type + node.surface)
+        #print(word_type + node.surface)
     node = node.next
 
 # リストを文字列に変換

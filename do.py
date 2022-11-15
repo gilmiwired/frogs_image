@@ -14,9 +14,14 @@ def main():
 
 
 def job(): # ①
+    subprocess.run(['rm','-r','word.png'])
+    subprocess.run(['git','add','-A'])
+    subprocess.run(['git','commit','-a','"auto up"'])
+    subprocess.run(['git','push'])
     subprocess.run(['python3','test.py'])
     subprocess.run(['git','add','-A'])
-    subprocess.run(['git','push','origin','master'])
+    subprocess.run(['git','commit','-a','auto up'])
+    subprocess.run(['git','push'])
     print("HelloWorld")
 
 
