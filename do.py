@@ -4,7 +4,7 @@ import subprocess
 
 def main():
     # job関数をスケジュールに登録
-    schedule.every(10).seconds.do(job) # ②
+    schedule.every(600).seconds.do(job) # ②
 
     while True:
         # job関数を実行
