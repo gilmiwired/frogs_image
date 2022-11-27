@@ -23,6 +23,7 @@ def job(): # ①
     subprocess.run(['git','add','.'])
     subprocess.run(['git','commit','-m','auto up'])
     subprocess.run(['git','push'])
+    exit()
 
 
 if __name__ == '__main__':
